@@ -355,6 +355,7 @@ img {
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
+    text-align: left;
   }
 }
 
@@ -374,6 +375,8 @@ img {
   .hero__title {
     font-size: 26px;
     max-width: 360px;
+    margin-left: 100px;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
