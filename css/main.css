@@ -273,7 +273,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #000;
-  margin-bottom: 64px;
+  margin-bottom: 24px;
 }
 .mob-menu-list__mail:focus, .mob-menu-list__mail:hover {
   color: var(--accent-color);
