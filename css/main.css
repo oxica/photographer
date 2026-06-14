@@ -735,8 +735,19 @@ img {
   }
 }
 
+.footer__logo {
+  color: #ffffff;
+}
 .footer__logo--white {
   color: var(--white-text-color);
+}
+
+.footer__copy {
+  color: #ffffff;
+}
+
+.footer__info {
+  color: #ffffff;
 }
 
 .footer-contact {
@@ -759,7 +770,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact__link:hover, .footer-contact__link:focus {
-  color: var(--accent-color);
+  color: #ffffff;
 }
 
 .social-section {

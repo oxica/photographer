@@ -26,9 +26,19 @@
 }
 
 .footer__logo {
+  color: #ffffff;
   &--white {
     color: var(--white-text-color);
   }
+}
+
+.footer__copy{
+  color: #ffffff;
+}
+
+.footer__info{
+  color: #ffffff;
+
 }
 
 .footer-contact {
@@ -53,7 +63,7 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: #ffffff;
   }
 }
 
