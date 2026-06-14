@@ -597,7 +597,18 @@ img {
 }
 
 .team-list__text {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.19;
+  text-align: left;
+}
+
+.team-list__pretext {
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.19;
