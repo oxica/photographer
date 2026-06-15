@@ -99,9 +99,6 @@ img {
   clip: rect(0 0 0 0);
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
 @media screen and (max-width: 1199px) {
   .header {
     padding-top: 16px;
@@ -182,7 +179,7 @@ img {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: #cdcdcd;
+  background-color: #e1dac1;
   top: 0;
   right: 0;
   padding: 15px 10px 48px 40px;
@@ -713,7 +710,7 @@ img {
 .footer {
   text-align: center;
   padding: 60px 0px;
-  background-color: var(--hero-background-color);
+  background-color: rgba(56, 34, 8, 0.9176470588);
 }
 
 .footer__flex {
