@@ -520,7 +520,6 @@ img {
 
 .work {
   padding-bottom: 94px;
-  display: none;
 }
 @media screen and (min-width: 1200px) {
   .work {
@@ -537,6 +536,11 @@ img {
   justify-content: center;
   align-items: center;
   grid-gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .work-list {
+    grid-gap: 60px;
+  }
 }
 
 .work-list__item {
