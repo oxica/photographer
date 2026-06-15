@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -536,7 +537,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .work-list {
-    grid-gap: 60px;
+    grid-gap: 70px;
   }
 }
 
@@ -559,6 +560,114 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.carousel-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 10px;
+  position: relative;
+  font-family: sans-serif;
+}
+
+/* Вікно перегляду (ховає все, що не влазить) */
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* Стрічка, яка рухається вліво/вправо */
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  will-change: transform;
+}
+
+/* Базова логіка адаптивності для карток */
+.review-card {
+  box-sizing: border-box;
+  padding: 0 10px;
+  /* Відступи між картками */
+  /* Десктоп за замовчуванням: 3 картки на екрані (100% / 3) */
+  flex: 0 0 33.3333%;
+}
+
+/* Внутрішній контент картки (колір плашки з фото) */
+.card-content {
+  background-color: #D6D2C4;
+  padding: 30px 20px;
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Текст відгуку */
+.review-text {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.review-author {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.review-city {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 5px 0 0 0;
+}
+
+/* Стрілки по боках */
+.carousel-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, opacity 0.3s;
+  z-index: 10;
+  flex-shrink: 0;
+  /* Щоб стрілки не стискалися */
+}
+
+.carousel-btn:hover {
+  background: #555;
+}
+
+/* АДАПТИВНІСТЬ ЧЕРЕЗ MEDIA QUERIES */
+/* Планшети (до 992px): 2 картки на екрані */
+@media (max-width: 992px) {
+  .review-card {
+    flex: 0 0 50%;
+  }
+}
+/* Телефони (до 600px): 1 картка на екрані */
+@media (max-width: 600px) {
+  .review-card {
+    flex: 0 0 100%;
+  }
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
 .team {
   padding-top: 60px;
 }
