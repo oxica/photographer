@@ -1,6 +1,9 @@
 .header {
-  // background-color: #4f2a06ea;
-  // border-bottom: 1px solid #ececec;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ececec;
+  border-bottom: 1px solid #ececec;
 
    @media screen and (max-width: 1199px) {
     padding-top: 16px;
@@ -178,7 +181,7 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: #e1dac1;
+  background-color: #ececec;
   top: 0;
   right: 0;
   padding: 15px 10px 48px 40px;
