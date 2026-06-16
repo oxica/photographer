@@ -466,6 +466,66 @@ img {
   }
 }
 
+/* Основна секція лічильників */
+.stats-section {
+  /* Світлий тон вашого сайту */
+  padding: 60px 20px;
+}
+
+/* Контейнер-сітка */
+.stats-container {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  /* Відступи між картками */
+  /* Комп'ютери за замовчуванням: 4 колонки */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Стиль картки */
+.stat-card {
+  background-color: #D6D2C4;
+  /* Колір плашки */
+  padding: 35px 20px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Великі цифри */
+.stat-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  /* Можна замінити на червонуватий колір акценту, як на вашому фото */
+  margin-bottom: 10px;
+}
+
+/* Опис під цифрою */
+.stat-text {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* --- АДАПТИВНІСТЬ ЧЕРЕЗ MEDIA QUERIES --- */
+/* Планшети (до 992px): перелаштовуємо в 2 колонки */
+@media (max-width: 992px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Телефони (до 600px): перелаштовуємо в 1 колонку */
+@media (max-width: 600px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
