@@ -1209,6 +1209,7 @@ img {
 .wedding-description {
   max-width: 800px;
   margin: 0 auto 40px;
+  padding: 20px;
   font-size: 16px;
   line-height: 1.6;
   color: var(--primary-text-color);
@@ -1223,7 +1224,7 @@ img {
 /* --- АДАПТИВНА СІТКА ГАЛЕРЕЇ (Альбомний формат) --- */
 .wedding-grid {
   display: grid;
-  gap: 24px;
+  grid-gap: 24px;
   /* Відступи між фото */
   /* Комп'ютери та планшети (за замовчуванням): 2 фото в рядку */
   grid-template-columns: repeat(2, 1fr);
@@ -1232,7 +1233,7 @@ img {
 @media screen and (max-width: 767px) {
   .wedding-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    grid-gap: 16px;
   }
 }
 
