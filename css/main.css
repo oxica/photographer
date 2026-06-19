@@ -52,26 +52,34 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media screen and (min-width: 480px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -720,6 +728,41 @@ img {
   text-transform: uppercase;
   color: var(--white-text-color);
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+.container-sl {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 480px) {
+  .container-sl {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container-sl {
+    width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-sl {
+    width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-sl {
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /* 1. Головний контейнер (у нас це .carousel-container) */
