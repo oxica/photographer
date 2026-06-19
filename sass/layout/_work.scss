@@ -45,115 +45,447 @@
 
 
 
-.carousel-container {
-  display: flex;
-  align-items: center;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 10px;
+// .carousel-container {
+//   display: flex;
+//   align-items: center;
+//   max-width: 1200px;
+//   margin: 40px auto;
+//   padding: 0 10px;
+//   position: relative;
+//   font-family: sans-serif;
+// }
+
+// /* Вікно перегляду (ховає все, що не влазить) */
+// .carousel-viewport {
+//   overflow: hidden;
+//   width: 100%;
+//   padding: 20px 0;
+// }
+
+// /* Стрічка, яка рухається вліво/вправо */
+// .carousel-track {
+//   display: flex;
+//   transition: transform 0.4s ease-in-out;
+//   will-change: transform;
+// }
+
+// /* Базова логіка адаптивності для карток */
+// .review-card {
+//   box-sizing: border-box;
+//   padding: 0 10px;
+//   /* Відступи між картками */
+
+//   /* Десктоп за замовчуванням: 3 картки на екрані (100% / 3) */
+//   flex: 0 0 33.3333%;
+// }
+
+// /* Внутрішній контент картки (колір плашки з фото) */
+// .card-content {
+//   background-color: #D6D2C4;
+//   padding: 30px 20px;
+//   border-radius: 4px;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   text-align: center;
+//   box-sizing: border-box;
+// }
+
+// /* Текст відгуку */
+// .review-text {
+//   font-size: 1rem;
+//   font-style: italic;
+//   margin-bottom: 20px;
+//   color: #333;
+//   line-height: 1.5;
+// }
+
+// .review-author {
+//   font-size: 1.1rem;
+//   font-weight: bold;
+//   margin: 0;
+// }
+
+// .review-city {
+//   font-size: 0.85rem;
+//   color: #666;
+//   margin: 5px 0 0 0;
+// }
+
+// /* Стрілки по боках */
+// .carousel-btn {
+//   background: #333;
+//   color: #fff;
+//   border: none;
+//   width: 40px;
+//   height: 40px;
+//   cursor: pointer;
+//   border-radius: 50%;
+//   font-size: 1.2rem;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   transition: background 0.3s, opacity 0.3s;
+//   z-index: 10;
+//   flex-shrink: 0;
+//   /* Щоб стрілки не стискалися */
+// }
+
+// .carousel-btn:hover {
+//   background: #555;
+// }
+
+// /* АДАПТИВНІСТЬ ЧЕРЕЗ MEDIA QUERIES */
+
+// /* Планшети (до 992px): 2 картки на екрані */
+// @media (max-width: 992px) {
+//   .review-card {
+//     flex: 0 0 50%;
+//   }
+// }
+
+// /* Телефони (до 600px): 1 картка на екрані */
+// @media (max-width: 600px) {
+//   .review-card {
+//     flex: 0 0 100%;
+//   }
+
+//   .carousel-btn {
+//     width: 35px;
+//     height: 35px;
+//     font-size: 1rem;
+//   }
+// }
+
+/* 1. Головний контейнер (у нас це .carousel-container) */
+.carousel-container.custom-carousel {
   position: relative;
-  font-family: sans-serif;
-}
-
-/* Вікно перегляду (ховає все, що не влазить) */
-.carousel-viewport {
-  overflow: hidden;
-  width: 100%;
-  padding: 20px 0;
-}
-
-/* Стрічка, яка рухається вліво/вправо */
-.carousel-track {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
-  will-change: transform;
-}
-
-/* Базова логіка адаптивності для карток */
-.review-card {
-  box-sizing: border-box;
-  padding: 0 10px;
-  /* Відступи між картками */
-
-  /* Десктоп за замовчуванням: 3 картки на екрані (100% / 3) */
-  flex: 0 0 33.3333%;
-}
-
-/* Внутрішній контент картки (колір плашки з фото) */
-.card-content {
-  background-color: #D6D2C4;
-  padding: 30px 20px;
-  border-radius: 4px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-/* Текст відгуку */
-.review-text {
-  font-size: 1rem;
-  font-style: italic;
-  margin-bottom: 20px;
-  color: #333;
-  line-height: 1.5;
-}
-
-.review-author {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.review-city {
-  font-size: 0.85rem;
-  color: #666;
-  margin: 5px 0 0 0;
-}
-
-/* Стрілки по боках */
-.carousel-btn {
-  background: #333;
-  color: #fff;
-  border: none;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 1.2rem;
+  /* Щоб стрілочки позиціонувалися відносно нього */
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s, opacity 0.3s;
-  z-index: 10;
-  flex-shrink: 0;
-  /* Щоб стрілки не стискалися */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* 2. Вікно перегляду */
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* 3. НАЙВАЖЛИВІШИЙ БЛОК: Стрічка, яка рухається (.opinie-slider) */
+.carousel-track.opinie-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  align-items: stretch;
+  padding: 10px 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  /* Приховуємо стандартний скролбар браузера */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Приховуємо скролбар для Chrome, Safari та Opera */
+.carousel-track.opinie-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 4. Сама картка відгуку */
+.review-card {
+  background-color: #D6D2C4;
+  padding: 30px 20px;
+  border-radius: 4px;
+  text-align: center;
+  flex: 0 0 calc((100% - 60px) / 3);
+  min-width: 280px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.review-text {
+  font-weight: 500;
+}
+
+/* ========================================================== */
+/* 5. НОВІ СТРІЛОЧКИ (ТОЧНО ЯК В ОФЕРТІ) */
+/* ========================================================== */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  /* Благородний білий колір як в оферті */
+  border: 1px solid #e0e0e0;
+  /* Легка світла рамка */
+  color: #212121;
+  /* Темний колір самої стрілочки всередині */
+  width: 44px;
+  /* Оптимальний розмір */
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* М'яка тінь */
+  transition: background-color 250ms ease, color 250ms ease, border-color 250ms ease;
+}
+
+/* Нове позиціонування: виносимо трохи назовні завдяки padding треку */
+.btn-prev {
+  left: -10px;
+}
+
+.btn-next {
+  right: -10px;
+}
+
+/* Ефект наведення: плавне фарбування в акцентний колір */
 .carousel-btn:hover {
-  background: #555;
+  background-color: var(--accent-color, #000);
+  /* Твій фірмовий колір */
+  color: #ffffff;
+  border-color: var(--accent-color, #000);
 }
 
-/* АДАПТИВНІСТЬ ЧЕРЕЗ MEDIA QUERIES */
+/* --- АДАПТИВНІСТЬ ДЛЯ СМАРТФОНІВ --- */
+@media screen and (max-width: 1199px) {
 
-/* Планшети (до 992px): 2 картки на екрані */
-@media (max-width: 992px) {
+  /* Ховаємо стрілочки на тач-екранах (як в оферті), бо там зручніше свайпати */
+  // .carousel-btn {
+  //   display: none;
+  // }
+}
+
+@media screen and (max-width: 991px) {
   .review-card {
-    flex: 0 0 50%;
+    flex: 0 0 calc((100% - 30px) / 2);
+    /* По 2 картки на планшетах */
   }
 }
 
-/* Телефони (до 600px): 1 картка на екрані */
-@media (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .review-card {
     flex: 0 0 100%;
+    /* По 1 картці на мобільних */
+  }
+}
+
+.oferta-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.oferta-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--black-logo-color);
+  margin-bottom: 40px;
+}
+
+/* Оболонка для позиціонування стрілочок */
+.oferta-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Стилі самого слайдера */
+.oferta-slider {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+  width: 100%;
+  max-width: 1140px;
+  scrollbar-width: none;
+  /* Приховуємо стандартний скролбар */
+
+  &::-webkit-scrollbar {
+    display: none;
+    /* Для Chrome / Safari */
+  }
+}
+
+/* --- СТИЛЬ КАРТКИ ПАКЕТУ --- */
+.oferta-card {
+  flex: 0 0 calc((100% - 60px) / 3);
+  /* На ПК показує рівно 3 картки в ряд */
+  min-width: 300px;
+  /* Захист від занадто сильного стискання */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  transition: transform 250ms ease, box-shadow 250ms ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Виділена картка (Пакет B - золотавий/акцентний варіант) */
+.oferta-card--accent {
+  border-color: var(--accent-color);
+  position: relative;
+  background-color: #fcfbf7;
+  /* Легкий благородний відтінок */
+}
+
+.oferta-card__header {
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.oferta-card__subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--secondary-text-color);
+  margin-bottom: 8px;
+}
+
+.oferta-card__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.oferta-card__price {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+/* Список послуг */
+.oferta-card__list {
+  margin-bottom: 32px;
+  flex-grow: 1;
+  /* Рівняє кнопки до низу, якщо тексти різної довжини */
+
+  li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--primary-text-color);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
   }
 
-  .carousel-btn {
-    width: 35px;
-    height: 35px;
-    font-size: 1rem;
+  .check {
+    color: #2ecc71;
+    /* Зелена галочка */
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  .important {
+    font-weight: 600;
+    /* Виділяємо книжку */
+    color: #000;
+  }
+}
+
+/* Кнопка замовлення */
+.oferta-card__btn {
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 250ms ease, color 250ms ease;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
+}
+
+/* --- СТРІЛОЧКИ (КНОПКИ КАРУСЕЛІ) --- */
+.oferta-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #212121;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  transition: background-color 250ms ease, color 250ms ease;
+
+  &:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border-color: var(--accent-color);
+  }
+}
+
+.slider-prev-btn.oferta-arrow {
+  left: -20px;
+}
+
+.slider-next-btn.oferta-arrow {
+  right: -20px;
+}
+
+/* --- АДАПТИВНІСТЬ --- */
+@media screen and (max-width: 1199px) {
+
+  /* На планшетах картки займають половину екрана */
+  .oferta-card {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Ховаємо стрілочки, бо на тач-екранах зручніше гортати пальцем */
+  // .oferta-arrow {
+  //   display: none;
+  // }
+}
+
+@media screen and (max-width: 767px) {
+
+  /* На мобільних — одна картка на весь екран */
+  .oferta-card {
+    flex: 0 0 100%;
   }
 }
