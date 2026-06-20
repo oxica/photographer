@@ -621,7 +621,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .features-list__item {
-    width: 450px;
+    width: 500px;
   }
 }
 
@@ -645,7 +645,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .features-list__icon-fon {
-    width: 450px;
+    width: 500px;
   }
 }
 
