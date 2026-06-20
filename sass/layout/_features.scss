@@ -169,11 +169,11 @@
 }
 
 /* Тимчасові фони (заміни своїми шляхами до фото зображень) */
-.bg-slub { background-image: url('/images/wesele-111.avif'); background-color: #aaa; }
-.bg-18 { background-image: url('/images/osiemnastka-2.avif'); background-color: #bbb; }
-.bg-jubileusz { background-image: url('/images/urodziny-7.avif'); background-color: #ccc; }
-.bg-chrzest { background-image: url('/images/chrzest-14.avif'); background-color: #ddd; }
-.bg-komunia { background-image: url('/images/komunia-34.avif'); background-color: #eee; }
+.bg-slub { background-image: url('./images/wesele-111.avif'); background-color: #aaa; }
+.bg-18 { background-image: url('./images/osiemnastka-2.avif'); background-color: #bbb; }
+.bg-jubileusz { background-image: url('./images/urodziny-7.avif'); background-color: #ccc; }
+.bg-chrzest { background-image: url('./images/chrzest-14.avif'); background-color: #ddd; }
+.bg-komunia { background-image: url('./images/komunia-34.avif'); background-color: #eee; }
 
 /* --- АДАПТИВНІСТЬ --- */
 @media screen and (max-width: 991px) {
