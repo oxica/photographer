@@ -5,6 +5,7 @@ scroll-behavior: smooth;
 
 
 body {
+  touch-action: pan-x pan-y;
   font-family:$mainFont;
   letter-spacing: 0.03em;
   background-color: var(--white-background-color);
