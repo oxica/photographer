@@ -47,6 +47,8 @@
   margin-bottom: 30px;
 
   background-color: var(--team-background-color);
+border-radius: 6px;
+overflow: hidden;
 
   @media screen and (min-width: 480px) {
     width: 450px;
