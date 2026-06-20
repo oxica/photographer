@@ -213,7 +213,7 @@
   flex-wrap: nowrap;
   gap: 30px;
   align-items: stretch;
-  padding: 10px 20px;
+  padding: 30px 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
 
@@ -237,7 +237,7 @@
 /* 4. Сама картка відгуку */
 .review-card {
   background-color: #D6D2C4;
-  padding: 30px 20px;
+  padding: 50px 20px;
   border-radius: 4px;
   text-align: center;
   flex: 0 0 calc((100% - 60px) / 3);
@@ -250,6 +250,7 @@
 
 .review-text {
   font-weight: 500;
+  margin-bottom: 30px;
 }
 
 /* ========================================================== */

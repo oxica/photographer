@@ -85,3 +85,115 @@
   max-width: 600px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+.gallery-preview {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-preview__title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.gallery-preview__subtitle {
+  color: #787171;
+  margin-bottom: 40px;
+}
+
+/* Налаштування сучасної сітки Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Ділимо екран на 6 умовних частин */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Базовий стиль для кожної картки-посилання */
+.gallery-grid__item {
+  position: relative;
+  height: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  grid-column: span 2; /* Звичайні картки займають 2 частини з 6 (тобто по 3 в ряд) */
+  transition: transform 0.3s ease;
+}
+
+/* Спеціальний клас для карток другого ряду, щоб вони ділили простір 50/50 */
+.gallery-grid__item--wide {
+  grid-column: span 3; /* Займають 3 частини з 6 (тобто по 2 в ряд) */
+}
+
+/* Темний фільтр поверх фотографії, щоб текст читався */
+.gallery-grid__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Напівпрозорий чорний */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.gallery-grid__overlay h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+/* Ефекти наведення (Hover) */
+.gallery-grid__item:hover {
+  transform: translateY(-3px); /* Картка ледь підстрибує */
+}
+
+.gallery-grid__item:hover .gallery-grid__overlay {
+  background: rgba(0, 0, 0, 0.25); /* Фільтр стає світлішим, відкриваючи фото */
+}
+
+.gallery-grid__item:hover .gallery-grid__overlay h3 {
+  transform: scale(1.05); /* Текст трохи збільшується */
+}
+
+/* Тимчасові фони (заміни своїми шляхами до фото зображень) */
+.bg-slub { background-image: url('/images/wesele-111.avif'); background-color: #aaa; }
+.bg-18 { background-image: url('/images/osiemnastka-2.avif'); background-color: #bbb; }
+.bg-jubileusz { background-image: url('/images/urodziny-7.avif'); background-color: #ccc; }
+.bg-chrzest { background-image: url('/images/chrzest-14.avif'); background-color: #ddd; }
+.bg-komunia { background-image: url('/images/komunia-34.avif'); background-color: #eee; }
+
+/* --- АДАПТИВНІСТЬ --- */
+@media screen and (max-width: 991px) {
+  /* На планшетах робимо по 2 картки в ряд для всіх */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-grid__item, 
+  .gallery-grid__item--wide {
+    grid-column: span 1;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* На мобільних — 1 стовпчик, картки йдуть одна під одною */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid__item {
+    height: 220px; /* Трохи зменшуємо висоту на смартфонах */
+  }
+}
+
