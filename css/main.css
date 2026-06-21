@@ -1342,6 +1342,77 @@ img {
   fill: currentColor;
 }
 
+/* Банер для кукіс */
+.cookie-banner {
+  position: fixed;
+  bottom: -100px; /* Спочатку схований внизу */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px;
+  background-color: #ffffff;
+  color: #212121;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 9999; /* Понад усім контентом */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  transition: bottom 0.4s ease; /* Плавна поява */
+}
+
+/* Коли банер активний, ми додаємо цей клас через JS */
+.cookie-banner.show {
+  bottom: 20px;
+}
+
+.cookie-text {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.cookie-link {
+  color: #787171; /* Твій колір або колір тексту */
+  text-decoration: underline;
+}
+
+.cookie-link:hover {
+  text-decoration: none;
+}
+
+/* Кнопка згоди */
+.cookie-btn {
+  background-color: #D6D2C4; /* Колір як у твоїх карток відгуків */
+  border: none;
+  color: #212121;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.cookie-btn:hover {
+  background-color: #787171; /* Ховер ефект */
+  color: #fff;
+}
+
+/* Адаптивність для мобільних */
+@media screen and (max-width: 576px) {
+  .cookie-banner {
+    flex-direction: column;
+    text-align: center;
+    bottom: -200px;
+  }
+  .cookie-banner.show {
+    bottom: 10px;
+  }
+}
 .footer {
   text-align: center;
   padding: 60px 0px;
