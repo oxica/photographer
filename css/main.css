@@ -1512,7 +1512,18 @@ img {
 }
 
 .footer-contact__item {
-  margin-top: 9px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 480px) {
+  .footer-contact__item {
+    margin-top: 9px;
+  }
+}
+@media (min-width: 768px) {
+  .footer-contact__item {
+    margin-top: 9px;
+  }
 }
 
 .footer-contact__link {
