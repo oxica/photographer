@@ -500,7 +500,7 @@ img {
   color: var(--white-text-color);
   font-family: "Roboto";
   font-weight: 900;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.87;
   align-items: center;
   text-align: center;
@@ -517,6 +517,11 @@ img {
     padding: 10px 32px;
     font-size: 16px;
     min-width: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__btn {
+    font-size: 20px;
   }
 }
 
@@ -604,6 +609,21 @@ img {
   flex-wrap: wrap;
 }
 
+.features__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .features__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
 .features-list {
   justify-content: center;
   grid-gap: 30px;
@@ -688,7 +708,7 @@ img {
 
 .gallery-preview__title {
   font-size: 32px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .gallery-preview__subtitle {

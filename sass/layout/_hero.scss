@@ -122,7 +122,7 @@
   font-family: $mainFont;
   font-weight: 900;
 
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.87;
   align-items: center;
   text-align: center;
@@ -142,7 +142,14 @@
     padding: 10px 32px;
     font-size: 16px;
     min-width: 200px;
+
   }
+  @media screen and (min-width: 768px) {
+      font-size: 20px;
+
+  }
+
+
 }
 
 
