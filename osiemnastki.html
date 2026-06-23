@@ -1,448 +1,753 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalanle-no" >
-    <title>Fotograf i kamerzysta na osiemnastki Adam Szymczak Kalisz, Nowe Skalmierzyce, Ostrów Wielkopolski, Stawiszyn, Zbiersk, Konin, Morawin, Koło, Turek, Pleszew, Jarocin, Szczytniki, Błaszki, Sieradz i Opatówek</title>
-        <meta name="description" content="Dynamiczne zdjęcia z osiemnastki w Kaliszu i okolicach. Profesjonalny fotograf na imprezy urodzinowe. Sprawdź pakiety 2026-2029 i uwiecznij swoją najlepszą imprezę
-">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalanle-no"
+    />
+    <title>
+      Fotograf i kamerzysta na osiemnastki Adam Szymczak Kalisz, Nowe
+      Skalmierzyce, Ostrów Wielkopolski, Stawiszyn, Zbiersk, Konin, Morawin,
+      Koło, Turek, Pleszew, Jarocin, Szczytniki, Błaszki, Sieradz i Opatówek
+    </title>
+    <meta
+      name="description"
+      content="Dynamiczne zdjęcia z osiemnastki w Kaliszu i okolicach. Profesjonalny fotograf na imprezy urodzinowe. Sprawdź pakiety 2026-2029 i uwiecznij swoją najlepszą imprezę
+"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    >
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    >
-    <link rel="stylesheet" href="./css/main.min.css">
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="header">
-      
       <div class="container header__section">
-  <nav class="header__nav">
-    <a class="header__logo logo link" href="./index.html">Adam&nbsp;<span class="header__logo--black">Szymczak</span></a>
-    
-    <ul class="nav list">
-      <li class="nav__item">
-        <a class="nav__link link " href="./index.html#o-mnie">O mnie</a>
-      </li>
-      
-      <!-- Комп'ютерне випадаюче меню "Zdjęcia" -->
-      <li class="nav__item dropdown">
-  <a class="nav__link link dropdown-toggle" href="./index.html#portfolio">Portfolio <span class="arrow">&#9662;</span></a>
-  <ul class="dropdown-menu list">
-    <li><a class="dropdown-menu__link link" href="./slubne.html">Zdjęcia ślubne</a></li>
-    <li><a class="dropdown-menu__link link" href="./chrzest.html">Chrzest Święty</a></li>
-    <li><a class="dropdown-menu__link link" href="./osiemnastki.html">18-stki</a></li>
-    <li><a class="dropdown-menu__link link" href="./komunia.html">Komunia Świętą</a></li>
-    <li><a class="dropdown-menu__link link" href="./urodziny.html">Zdjęcia urodzinowe</a></li>
-  </ul>
-</li>
+        <nav class="header__nav">
+          <a class="header__logo logo link" href="./index.html"
+            >Adam&nbsp;<span class="header__logo--black">Szymczak</span></a
+          >
 
-      
-      <li class="nav__item">
-        <a class="nav__link link" href="./index.html#filmy">Filmy</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link link" href="./index.html#oferta">Cennik</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link link" href="./index.html#opinie">Opinie</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link link" href="./index.html#kontakt">Kontakt</a>
-      </li>
-    </ul>
-  </nav>
-  
-  <button class="menu-open" data-menu-open>
-    <svg class="menu-burger" width="24" height="16">
-      <use href="./images/icons.svg#icon-burger"></use>
-    </svg>
-  </button>
-</div>
+          <ul class="nav list">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html#o-mnie">O mnie</a>
+            </li>
 
-<!-- Мобільне меню -->
-<div class="mob-menu flex is-hidden" data-menu>
-  <div>
-    <button class="menu-close" data-menu-close>
-      <svg class="menu-close" width="40" height="40">
-        <use href="./images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    
-    <ul class="mob-menu-list list">
-      <li class="mob-menu-list__item">
-        <a class="mob-menu-list__link link " href="./index.html#o-mnie">O mnie</a>
-      </li>
-      
-      <!-- Секція Фото в мобільному меню (аккуратний підсписок) -->
-      <li class="mob-menu-list__item">
-  <a class="mob-menu-list__link link" href="./index.html#portfolio" style="color: var(--accent-color); font-size: 20px;">Portfolio <span style="font-size: 14px;">&#9662;</span></a>
-  
-  <ul class="mob-sub-menu list" style="padding-left: 20px; margin-top: 8px;">
-    <li style="margin-bottom: 10px;"><a class="mob-menu-list__link link" href="./slubne.html" style="font-size: 18px;">Zdjęcia ślubne</a></li>
-    <li style="margin-bottom: 10px;"><a class="mob-menu-list__link link" href="./chrzest.html" style="font-size: 18px;">Chrzest Święty</a></li>
-    <li style="margin-bottom: 10px;"><a class="mob-menu-list__link link" href="./osiemnastki.html" style="font-size: 18px;">18-stki</a></li>
-    <li style="margin-bottom: 10px;"><a class="mob-menu-list__link link" href="./komunia.html" style="font-size: 18px;">Komunia Świętą</a></li>
-    <li><a class="mob-menu-list__link link" href="./urodziny.html" style="font-size: 18px;">Zdjęcia urodzinowe</a></li>
-  </ul>
-</li>
+            <!-- Комп'ютерне випадаюче меню "Zdjęcia" -->
+            <li class="nav__item dropdown">
+              <a
+                class="nav__link link dropdown-toggle"
+                href="./index.html#portfolio"
+                >Portfolio <span class="arrow">&#9662;</span></a
+              >
+              <ul class="dropdown-menu list">
+                <li>
+                  <a class="dropdown-menu__link link" href="./slubne.html"
+                    >Zdjęcia ślubne</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-menu__link link" href="./osiemnastki.html"
+                    >18-stki</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-menu__link link" href="./urodziny.html"
+                    >Zdjęcia urodzinowe i jubileuszowe</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-menu__link link" href="./chrzest.html"
+                    >Chrzest Święty</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-menu__link link" href="./komunia.html"
+                    >Komunia Święta</a
+                  >
+                </li>
+              </ul>
+            </li>
 
-      
-      <li class="mob-menu-list__item">
-        <a class="mob-menu-list__link link" href="./index.html#filmy">Filmy</a>
-      </li>
-      <li class="mob-menu-list__item">
-        <a class="mob-menu-list__link link" href="./index.html#oferta">Cennik</a>
-      </li>
-      <li class="mob-menu-list__item">
-        <a class="mob-menu-list__link link" href="./index.html#opinie">Opinie</a>
-      </li>
-      <li class="mob-menu-list__item">
-        <a class="mob-menu-list__link link" href="./index.html#kontakt">Kontakt</a>
-      </li>
-    </ul>
-  </div>
-</div>
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html#filmy">Filmy</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html#oferta">Cennik</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html#opinie">Opinie</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
 
+        <button class="menu-open" data-menu-open>
+          <svg class="menu-burger" width="24" height="16">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Мобільне меню -->
+      <div class="mob-menu flex is-hidden" data-menu>
+        <div>
+          <button class="menu-close" data-menu-close>
+            <svg class="menu-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link" href="./index.html#o-mnie"
+                >O mnie</a
+              >
+            </li>
+
+            <!-- Секція Фото в мобільному меню (аккуратний підсписок) -->
+            <li class="mob-menu-list__item">
+              <a
+                class="mob-menu-list__link link"
+                href="./index.html#portfolio"
+                style="color: var(--accent-color); font-size: 20px"
+                >Portfolio <span style="font-size: 14px">&#9662;</span></a
+              >
+
+              <ul
+                class="mob-sub-menu list"
+                style="padding-left: 20px; margin-top: 8px"
+              >
+                <li style="margin-bottom: 10px">
+                  <a
+                    class="mob-menu-list__link link"
+                    href="./slubne.html"
+                    style="font-size: 18px"
+                    >Zdjęcia ślubne</a
+                  >
+                </li>
+                <li style="margin-bottom: 10px">
+                  <a
+                    class="mob-menu-list__link link"
+                    href="./osiemnastki.html"
+                    style="font-size: 18px"
+                    >18-stki</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mob-menu-list__link link"
+                    href="./urodziny.html"
+                    style="font-size: 18px"
+                    >Zdjęcia urodzinowe i jubileuszowe</a
+                  >
+                </li>
+                <li style="margin-bottom: 10px">
+                  <a
+                    class="mob-menu-list__link link"
+                    href="./chrzest.html"
+                    style="font-size: 18px"
+                    >Chrzest Święty</a
+                  >
+                </li>
+                
+                <li style="margin-bottom: 10px">
+                  <a
+                    class="mob-menu-list__link link"
+                    href="./komunia.html"
+                    style="font-size: 18px"
+                    >Komunia Święta</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link" href="./index.html#filmy"
+                >Filmy</a
+              >
+            </li>
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link" href="./index.html#oferta"
+                >Cennik</a
+              >
+            </li>
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link" href="./index.html#opinie"
+                >Opinie</a
+              >
+            </li>
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link" href="./index.html#kontakt"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    
+
     <main>
       <section class="wedding-gallery-section container">
-  <!-- Заголовок та SEO-оптимізований опис -->
-  <h1 class="wedding-title">Fotograf na osiemnastki</h1>
-  <p class="wedding-description">
-    Planujesz niezapomnianą imprezę і szukasz profesjonalnego fotografa na 18 urodziny, który uchwyci najlepsze momenty? Oferuję dynamiczny reportaż z osiemnastki, pełen szalonych ujęć z parkietu, emocji podczas toastów oraz wspólnych zdjęć z przyjaciółmi. Moja fotografia imprezowa w klubach i na salach idealnie oddaje klimat nocy – od oficjalnego wjazdu tortu po najdziksze tańce. Zadbaj o to, aby Twoje zdjęcia z osiemnastych urodzin były nowoczesne, ostre i pełne energii, stanowiąc niesamowitą pamiątkę z wejścia w dorosłość!
-  </p>
+        <!-- Заголовок та SEO-оптимізований опис -->
+        <h1 class="wedding-title">Fotograf na osiemnastki</h1>
+        <p class="wedding-description">
+          Planujesz niezapomnianą imprezę i szukasz profesjonalnego fotografa na
+          18 urodziny, który uchwyci najlepsze momenty? Oferuję dynamiczny
+          reportaż z osiemnastki, pełen szalonych ujęć z parkietu, emocji
+          podczas toastów oraz wspólnych zdjęć z rodziną, oraz z przyjaciółmi. Zadbam o to, aby Twoje
+          zdjęcia z osiemnastych urodzin były dynamiczne oraz emocjonalne,
+          stanowiąc niesamowitą pamiątkę z wejścia w dorosłość!
+        </p>
 
-  <!-- Сітка галереї (Альбомні фото) -->
-  <div class="wedding-grid">
+        <!-- Сітка галереї (Альбомні фото) -->
+        <div class="wedding-grid">
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-2.avif"
+              alt="profesjonalny fotograf na 18 urodziny Kalisz
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-3.avif"
+              alt="dynamiczny reportaż z osiemnastki Kalisz
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-2.avif" alt="profesjonalny fotograf na 18 urodziny Kalisz
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-3.avif" alt="dynamiczny reportaż z osiemnastki Kalisz
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-4.avif"
+              alt="ile kosztuje fotograf na 18 w Kaliszu
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-5.avif"
+              alt="fotograf na osiemnastkę cena Kalisz
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-4.avif" alt="ile kosztuje fotograf na 18 w Kaliszu
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-5.avif" alt="fotograf na osiemnastkę cena Kalisz
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-6.avif"
+              alt="zdjęcia z osiemnastych urodzin Kalisz klub
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-6.avif" alt="zdjęcia z osiemnastych urodzin Kalisz klub
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-7.avif" alt="najlepszy fotograf imprezowy Kalisz 18
-" />
-    </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-39.avif"
+              alt="ostre zdjęcia z imprezy w ciemnym klubie 18
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-7.avif"
+              alt="najlepszy fotograf imprezowy Kalisz 18
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-8.avif" alt="fotograf na osiemnastki Kalisz i okolice
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-9.avif" alt="sesja zdjęciowa na 18 urodziny Kalisz
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-8.avif"
+              alt="fotograf na osiemnastki Kalisz i okolice
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-9.avif"
+              alt="sesja zdjęciowa na 18 urodziny Kalisz
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-10.avif" alt="fotograf na imprezy urodzinowe Kalisz sala
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-11.avif" alt="zdjęcia z 18-stki Kalisz opinie
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-10.avif"
+              alt="fotograf na imprezy urodzinowe Kalisz sala
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-11.avif"
+              alt="zdjęcia z 18-stki Kalisz opinie
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-12.avif" alt="tani fotograf na 18 urodziny Kalisz
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-13.avif" alt="reportaż fotograficzny z osiemnastki Kalisz
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-12.avif"
+              alt="tani fotograf na 18 urodziny Kalisz
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-13.avif"
+              alt="reportaż fotograficzny z osiemnastki Kalisz
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-14.avif" alt="fotograf na urodziny dla młodzieży Kalisz
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-15.avif" alt="sesja urodzinowa w prezencie na 18 Kalisz
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-14.avif"
+              alt="fotograf na urodziny dla młodzieży Kalisz
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-15.avif"
+              alt="sesja urodzinowa w prezencie na 18 Kalisz
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-16.avif" alt="fotograf Kalisz impreza osiemnastkowa
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-17.avif" alt="nowoczesny fotograf na 18 w Kaliszu
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-16.avif"
+              alt="fotograf Kalisz impreza osiemnastkowa
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-17.avif"
+              alt="nowoczesny fotograf na 18 w Kaliszu
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-18.avif" alt="zdjęcia na osiemnastkę cennik Kalisz
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-19.avif" alt="fotograf na osiemnastkę Kalisz wolne terminy
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-18.avif"
+              alt="zdjęcia na osiemnastkę cennik Kalisz
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-19.avif"
+              alt="fotograf na osiemnastkę Kalisz wolne terminy
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-20.avif" alt="fotograf klubowy na 18 urodziny Kalisz
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-21.avif" alt="pamiątkowe zdjęcia z osiemnastki Kalisz
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-20.avif"
+              alt="fotograf klubowy na 18 urodziny Kalisz
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-21.avif"
+              alt="pamiątkowe zdjęcia z osiemnastki Kalisz
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-22.avif" alt="fotograf na osiemnaste urodziny dziecka Kalisz
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-23.avif" alt="sesja plenerowa na 18 urodziny Kalisz
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-22.avif"
+              alt="fotograf na osiemnaste urodziny dziecka Kalisz
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-23.avif"
+              alt="sesja plenerowa na 18 urodziny Kalisz
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-24.avif" alt="dobry fotograf na osiemnastkę w Kaliszu
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-25.avif" alt="fotograf na 18 lat Kalisz cena za godzinę
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-24.avif"
+              alt="dobry fotograf na osiemnastkę w Kaliszu
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-25.avif"
+              alt="fotograf na 18 lat Kalisz cena za godzinę
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-26.avif" alt="zdjęcia z osiemnastki w restauracji Kalisz
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-27.avif" alt="fotograf na przyjęcie urodzinowe Kalisz
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-26.avif"
+              alt="zdjęcia z osiemnastki w restauracji Kalisz
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-27.avif"
+              alt="fotograf na przyjęcie urodzinowe Kalisz
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-28.avif" alt="portfolio fotografa na osiemnastki Kalisz
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-29.avif" alt="fotograf na osiemnastkę Kalisz oferta
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-28.avif"
+              alt="portfolio fotografa na osiemnastki Kalisz
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-29.avif"
+              alt="fotograf na osiemnastkę Kalisz oferta
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-30.avif" alt="zdjęcia z imprezy 18 lat Kalisz
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-31.avif" alt="fotograf na imprezę zamkniętą Kalisz 18
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-30.avif"
+              alt="zdjęcia z imprezy 18 lat Kalisz
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-31.avif"
+              alt="fotograf na imprezę zamkniętą Kalisz 18
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-32.avif" alt="wynajęcie fotografa na 18 urodziny Kalisz
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-33.avif" alt="zdjęcia grupowe z przyjaciółmi osiemnastka Kalisz
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-32.avif"
+              alt="wynajęcie fotografa na 18 urodziny Kalisz
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-33.avif"
+              alt="zdjęcia grupowe z przyjaciółmi osiemnastka Kalisz
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-34.avif" alt="naturalne zdjęcia z 18 urodzin Kalisz
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-35.avif" alt="fotograf na urodziny osiemnaste Kalisz cennik
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-34.avif"
+              alt="naturalne zdjęcia z 18 urodzin Kalisz
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-35.avif"
+              alt="fotograf na urodziny osiemnaste Kalisz cennik
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-36.avif" alt="nowoczesny reportaż z osiemnastki pełen emocji
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-37.avif" alt="zdjęcia z osiemnastych urodzin z przyjaciółmi
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-36.avif"
+              alt="nowoczesny reportaż z osiemnastki pełen emocji
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-37.avif"
+              alt="zdjęcia z osiemnastych urodzin z przyjaciółmi
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-38.avif" alt="fotograf na 18 urodziny z własnym oświetleniem
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-39.avif" alt="ostre zdjęcia z imprezy w ciemnym klubie 18
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-38.avif"
+              alt="fotograf na 18 urodziny z własnym oświetleniem
+"
+            />
+          </div>
+          
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-40.avif" alt="profesjonalne zdjęcia z wjazdu tortu osiemnastka
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-41.avif" alt="dynamiczne ujęcia z parkietu na osiemnastce
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-40.avif"
+              alt="profesjonalne zdjęcia z wjazdu tortu osiemnastka
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-41.avif"
+              alt="dynamiczne ujęcia z parkietu na osiemnastce
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-42.avif" alt="ile godzin fotografuje fotograf na osiemnastce
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-43.avif" alt="zdjęcia z osiemnastki gotowe w 7 dni
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-42.avif"
+              alt="ile godzin fotografuje fotograf na osiemnastce
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-43.avif"
+              alt="zdjęcia z osiemnastki gotowe w 7 dni
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-44.avif" alt="pamiątka z wejścia w dorosłość zdjęcia imprezowe
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-45.avif" alt="fotograf na urodziny osiemnaste z mini sesją
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-44.avif"
+              alt="pamiątka z wejścia w dorosłość zdjęcia imprezowe
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-45.avif"
+              alt="fotograf na urodziny osiemnaste z mini sesją
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-46.avif" alt="naturalny reportaż z osiemnastki bez pozowania
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-47.avif" alt="fotograf na osiemnastkę cena za 3 godziny pracy
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-46.avif"
+              alt="naturalny reportaż z osiemnastki bez pozowania
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-47.avif"
+              alt="fotograf na osiemnastkę cena za 3 godziny pracy
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-48.avif" alt="zdjęcia z 18 urodzin w stylu glamour
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-49.avif" alt="reportaż z osiemnastki zdjęcia z zimnymi ogniami
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-48.avif"
+              alt="zdjęcia z 18 urodzin w stylu glamour
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-49.avif"
+              alt="reportaż z osiemnastki zdjęcia z zimnymi ogniami
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-50.avif" alt="fotograf na imprezę urodzinową dla nastolatków
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-51.avif" alt="co obejmuje oferta fotografa na osiemnastkę
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-50.avif"
+              alt="fotograf na imprezę urodzinową dla nastolatków
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-51.avif"
+              alt="co obejmuje oferta fotografa na osiemnastkę
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-52.avif" alt="zdjęcia z osiemnastki robione jasnym obiektywem
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-53.avif" alt="fotograf na 18 urodziny eleganckie przyjęcie
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-52.avif"
+              alt="zdjęcia z osiemnastki robione jasnym obiektywem
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-53.avif"
+              alt="fotograf na 18 urodziny eleganckie przyjęcie
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-54.avif" alt="zdjęcia z osiemnastki w formie galerii online
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-55.avif" alt="fotograf na osiemnastkę do dyskoteki cena
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-54.avif"
+              alt="zdjęcia z osiemnastki w formie galerii online
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-55.avif"
+              alt="fotograf na osiemnastkę do dyskoteki cena
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-56.avif" alt="reportaż z 18 urodzin zdjęcia grupowe i detale
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-57.avif" alt="fotograf na osiemnastkę z obróbką cyfrową
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-56.avif"
+              alt="reportaż z 18 urodzin zdjęcia grupowe i detale
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-57.avif"
+              alt="fotograf na osiemnastkę z obróbką cyfrową
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-58.avif" alt="spontaniczne ujęcia z osiemnastych urodzin
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-59.avif" alt="sesja portretowa solenizanta na osiemnastce
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-58.avif"
+              alt="spontaniczne ujęcia z osiemnastych urodzin
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-59.avif"
+              alt="sesja portretowa solenizanta na osiemnastce
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-60.avif" alt="wybrać dobrego fotografa na 18 urodziny
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-61.avif" alt="profesjonalna fotografia imprezowa osiemnastki
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-60.avif"
+              alt="wybrać dobrego fotografa na 18 urodziny
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-61.avif"
+              alt="profesjonalna fotografia imprezowa osiemnastki
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-62.avif" alt="zdjęcia z osiemnastki z toastu i życzeń
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-63.avif" alt="fotograf na osiemnastkę z pendrivem ze zdjęciami
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-62.avif"
+              alt="zdjęcia z osiemnastki z toastu i życzeń
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-63.avif"
+              alt="fotograf na osiemnastkę z pendrivem ze zdjęciami
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-64.avif" alt="zdjęcia urodzinowe 18 lat pamiątka dla rodziców
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-65.avif" alt="reportaż fotograficzny z osiemnastki w lokalu
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-64.avif"
+              alt="zdjęcia urodzinowe 18 lat pamiątka dla rodziców
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-65.avif"
+              alt="reportaż fotograficzny z osiemnastki w lokalu
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-66.avif" alt="nowoczesna obróbka zdjęć z 18 urodzin
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-67.avif" alt="fotograf na osiemnastkę z najlepszymi opiniami
-" />
-    </div>
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-66.avif"
+              alt="nowoczesna obróbka zdjęć z 18 urodzin
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-67.avif"
+              alt="fotograf na osiemnastkę z najlepszymi opiniami
+"
+            />
+          </div>
 
-    <div class="wedding-grid__item fade-left">
-      <img src="./images/osiemnastka-68.avif" alt="sesja fotograficzna na osiemnastkę z gadżetami
-" />
-    </div>
-    <div class="wedding-grid__item fade-right">
-      <img src="./images/osiemnastka-1.avif" alt="fotograf na osiemnaste urodziny reportaż i plener
-" />
-    </div>
-
-    
-  </div>
-</section>
-
+          <div class="wedding-grid__item fade-left">
+            <img
+              src="./images/osiemnastka-68.avif"
+              alt="sesja fotograficzna na osiemnastkę z gadżetami
+"
+            />
+          </div>
+          <div class="wedding-grid__item fade-right">
+            <img
+              src="./images/osiemnastka-1.avif"
+              alt="fotograf na osiemnaste urodziny reportaż i plener
+"
+            />
+          </div>
+        </div>
+      </section>
     </main>
-      <footer id="kontakt" class="footer">
+    <footer id="kontakt" class="footer">
       <div class="container">
         <div class="footer__flex">
-          
           <div class="footer__contacts-flex">
             <a class="footer__logo logo link" href="./index.html"
-            >Adam&nbsp;&nbsp;<span class="footer__logo--white">Szymczak</span>
+              >Adam&nbsp;&nbsp;<span class="footer__logo--white">Szymczak</span>
             </a>
             <address class="footer-contact">
               <ul class="footer-contact__list list">
@@ -455,31 +760,33 @@
                     >62-800 Kalisz ul.Prymasa Wyszyńskiego 50/2</a
                   >
                 </li>
-                
               </ul>
             </address>
           </div>
           <ul class="footer__contacts-flex footer-contact__list list">
-                        <!-- <p class="social-section__text">Kontakt</p> -->
+            <!-- <p class="social-section__text">Kontakt</p> -->
 
-                
-                <li class="footer-contact__item">
-                  <a
-                    class="footer-contact__link link"
-                    href="mailto:adamszymczak1984@wp.pl"
-                    >adamszymczak1984@wp.pl</a>
-                </li>
-                <li class="footer-contact__item">
-                  <a class="footer-contact__link link" href="tel:+48530464942"
-                    >+48 530 464 942</a
-                  >
-                </li>
-              </ul>
-          <div class=" footer__contacts-flex social-section">
+            <li class="footer-contact__item">
+              <a
+                class="footer-contact__link link"
+                href="mailto:adamszymczak1984@wp.pl"
+                >adamszymczak1984@wp.pl</a
+              >
+            </li>
+            <li class="footer-contact__item">
+              <a class="footer-contact__link link" href="tel:+48530464942"
+                >+48 530 464 942</a
+              >
+            </li>
+          </ul>
+          <div class="footer__contacts-flex social-section">
             <!-- <p class="social-section__text">Obserwuj</p> -->
             <ul class="footer-list list">
               <li class="footer-list__item">
-                <a class="footer-list__link" href="https://www.instagram.com/dynamicznekadry.pl?igsh=ejNncTZyNnU4bHI0">
+                <a
+                  class="footer-list__link"
+                  href="https://www.instagram.com/dynamicznekadry.pl?igsh=ejNncTZyNnU4bHI0"
+                >
                   <svg class="footer-list__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
@@ -487,7 +794,10 @@
               </li>
 
               <li class="footer-list__item">
-                <a class="footer-list__link" href="https://www.tiktok.com/@dynamicznekadry.p?_r=1&_t=ZN-97NQ3rfKXpe">
+                <a
+                  class="footer-list__link"
+                  href="https://www.tiktok.com/@dynamicznekadry.p?_r=1&_t=ZN-97NQ3rfKXpe"
+                >
                   <svg class="footer-list__icon" width="20" height="20">
                     <use href="./images/tiktok.svg"></use>
                   </svg>
@@ -495,16 +805,21 @@
               </li>
 
               <li class="footer-list__item">
-                <a class="footer-list__link" href="https://www.facebook.com/share/1WzVgTsMKY/">
+                <a
+                  class="footer-list__link"
+                  href="https://www.facebook.com/share/1WzVgTsMKY/"
+                >
                   <svg class="footer-list__icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook">
-</use>
+                    <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
 
               <li class="footer-list__item">
-                <a class="footer-list__link" href="https://www.linkedin.com/in/adam-szymczak-107631418">
+                <a
+                  class="footer-list__link"
+                  href="https://www.linkedin.com/in/adam-szymczak-107631418"
+                >
                   <svg class="footer-list__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
@@ -514,43 +829,38 @@
           </div>
 
           <ul class="footer__contacts-flex footer-contact__list list">
-                        <!-- <p class="social-section__text">Kontakt</p> -->
+            <!-- <p class="social-section__text">Kontakt</p> -->
 
-                
-                <li class="footer-contact__item">
-                  <a
-                    class="footer-contact__link link"
-                    href="./rodo.html"
-                    >Polityka prywatności</a>
-                </li>
-                <li class="footer-contact__item">
-                  <a class="footer-contact__link link" href="https://it-room.pl"
-                    >Wykonawca IT-room.pl</a
-                  >
-                </li>
-              </ul>
-          
-          
+            <li class="footer-contact__item">
+              <a class="footer-contact__link link" href="./rodo.html"
+                >Polityka prywatności</a
+              >
+            </li>
+            <li class="footer-contact__item">
+              <a class="footer-contact__link link" href="https://it-room.pl"
+                >Wykonawca IT-room.pl</a
+              >
+            </li>
+          </ul>
 
           <span class="footer__copy"
-        >&#169; Wszystkie prawa zastrzeżone 2026</span>
-        
-          
+            >&#169; Wszystkie prawa zastrzeżone 2026</span
+          >
         </div>
       </div>
     </footer>
-    
-    
+
     <button id="scrollToTopBtn" class="scroll-to-top-btn">&#10148;</button>
 
     <div id="cookie-banner" class="cookie-banner">
-  <p class="cookie-text">
-    Ta strona korzysta z plików cookies w celu realizacji usług i prowadzenia statystyk. 
-    Możesz określić warunki przechowywania lub dostępu do plików cookies w Twojej przeglądarce. 
-    <a href="./rodo.html" class="cookie-link">Polityka Prywatności</a>.
-  </p>
-  <button id="cookie-accept-btn" class="cookie-btn">Akceptuję</button>
-</div>
+      <p class="cookie-text">
+        Ta strona korzysta z plików cookies w celu realizacji usług i
+        prowadzenia statystyk. Możesz określić warunki przechowywania lub
+        dostępu do plików cookies w Twojej przeglądarce.
+        <a href="./rodo.html" class="cookie-link">Polityka Prywatności</a>.
+      </p>
+      <button id="cookie-accept-btn" class="cookie-btn">Akceptuję</button>
+    </div>
 
     <!-- <script src="./js/modal.js"></script> -->
     <!-- <script src="./js/opinie.js"></script> -->
@@ -558,7 +868,5 @@
     <script src="./js/stat.js"></script>
     <script src="./js/backtotop.js"></script>
     <script src="./js/cookies.js"></script>
-
-
   </body>
 </html>

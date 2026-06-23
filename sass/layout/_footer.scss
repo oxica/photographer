@@ -33,7 +33,10 @@
 }
 
 .footer__copy{
-  color: #ffffff;
+  color: #d6d6d6;
+
+  font-size: 14px;
+
 
   // @media (max-width: 768px) {
   //   padding-top: 10px;
@@ -69,16 +72,16 @@
 
 .footer-contact__link {
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.71;
 
-  color: var(--footer-text-color);
+  color: #e0d9d9;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    color: #ffffff;
+    color: var(--footer-text-color);
   }
 }
 
