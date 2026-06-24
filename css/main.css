@@ -1516,7 +1516,7 @@ img {
 }
 
 .footer__copy {
-  color: #d6d6d6;
+  color: #a5a5a5;
   font-size: 14px;
 }
 
@@ -1556,6 +1556,10 @@ img {
 }
 .footer-contact__link:hover, .footer-contact__link:focus {
   color: var(--footer-text-color);
+}
+
+.footer-contact__link-1 {
+  font-weight: 900;
 }
 
 .social-section {
