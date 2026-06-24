@@ -525,6 +525,18 @@ img {
   }
 }
 
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+@media screen and (min-width: 1200px) {
+  .hero__actions {
+    gap: 15px;
+  }
+}
+
 /* Основна секція лічильників */
 .stats-section {
   /* Світлий тон вашого сайту */
