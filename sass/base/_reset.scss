@@ -1,11 +1,16 @@
 html{
 scroll-behavior: smooth;
+touch-action: pan-y;
+-ms-touch-action: pan-y;
 }
+
+
 
 
 
 body {
   touch-action: pan-x pan-y;
+  -ms-touch-action: pan-y;
   font-family:$mainFont;
   letter-spacing: 0.03em;
   background-color: var(--white-background-color);
