@@ -1509,6 +1509,7 @@ img {
 }
 
 .footer__flex {
+  justify-content: center;
   display: block;
   margin: 0;
   padding: 0px;
@@ -1541,6 +1542,36 @@ img {
 .footer__copy {
   color: #a5a5a5;
   font-size: 14px;
+}
+
+.footer__copy__flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__copy__flex:hover, .footer__copy__flex:focus {
+  color: #ffffff;
+}
+
+.footer__copy__flex-top {
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .footer__copy__flex-top {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__center {
+    padding-left: 130px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__center {
+    padding-left: 0;
+  }
 }
 
 .footer__info {
