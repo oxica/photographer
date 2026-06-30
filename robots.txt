@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+Disallow: /admin/
+Disallow: /config/
+Disallow: /secret/
+Disallow: /private/
+Disallow: /404.html
+Disallow: /policy-error-template.html
+
+Disallow: /*?s=
+Disallow: /*?search=
+
+Sitemap: https://dynamicznekadry.pl/sitemap.xml
