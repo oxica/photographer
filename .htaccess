@@ -8,7 +8,12 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ / [R=301,L]
 
-# 3. Приховування .html з кінця внутрішніх сторінок
+# 3. Якщо користувач ВРУЧНУ вводить /urodziny.html -> перенаправляємо його на /urodziny
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP/
+RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
+
+# 4. Внутрішнє правило (для сервера): показувати вміст файлу .html за адресою без розширення
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^\.]+)/?$ $1.html [NC,L]
+
